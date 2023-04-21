@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>HTML</title>
+</head>
+<body>
+	<!--Таблица закрытая в блочный тег, класс для удобства стилизации-->
+<div class="container">
+	<nav> <!--Навигация-->
+		<ul>
+			<li> <!--Элемент таблицы-->
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Contacts</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="header-block">
+		<h1>H1 tag</h1> <!--Заголовки разных уровней-->
+		<h2>H2 tag</h2>
+	</div>
+	<h3>H3 tag</h3>
+	<h4>H4 tag</h4>
+	<h5>H5 tag</h5>
+	<h6>H6 tag</h6>
+	<hr> <!--для разделения текста-->
+<!--Параграф-->
+	<p>Lorem ipsum dolor <br>sit amet <strong>consectetur adipisicing elit.</strong> <i>Cumque minus</i> quia dolores <small>consequatur</small>. Id, nemo.</p>
+	<a target="_blank" href="https://www.youtube.com/">This is link</a><br> <!--Ссылка на ютуб-->
+	<a download href="files/modern-css.pdf">PDF Modern CSS</a><br> <!--Ссылка с атрибутом для скачивания-->
+	<a href="tel:+380661037873">+38066-103-78-73</a><br><!-- Ссылка с атрибутом для набора номера-->
+	<a href="mailto:example@mail.com">E-mail</a><br><!--Ссылка с атрибутом для перехода в почту-->
+	<a href="skype:dexter1902?call">Skype</a><br><!--Ссылка с атрибутом для скайпа-->
+
+	<img src="files/img.jpg" alt="music man"> <!--Изображение, src для указания пути, alt-в случаях если изображение не отобразилось, вместо него будет текст-->
+	
+	<table> <!--Таблица-->
+		<thead> <!--Шапка таблицы-->
+			<tr> <!--Ряд таблицы-->
+				<th>№</th> <!--Ячейка таблицы, выравнивается по центру-->
+				<th>Ім'я товару</th>
+				<th>Одиниці виміру</th>
+				<th>Кількість</th>
+				<th>Ціна за одиницю</th>
+				<th>Сума</th>
+			</tr>
+		</thead>
+		<tfoot> <!--Низ/сумирующая часть таблицы-->
+			<tr>
+				<td class="footer-col" colspan="5">Всього:</td><td>440 грн.</td>
+			</tr>
+		</tfoot>
+		<tbody> <!--Основная часть/тело таблцы-->
+			<tr>
+				<td>1</td><!--Ячейка таблицы, не выравнивается по центру-->
+				<td>Банани</td>
+				<td>Кг.</td>
+				<td>40</td>
+				<td>80 грн</td>
+				<td>80 грн</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Манго</td>
+				<td>Кг.</td>
+				<td>10</td>
+				<td>180 грн</td>
+				<td>360 грн</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<ul> <!-- Список маркированый-->
+		<div>Маркований список</div>
+		<li>1</li> <!-- Элемент списка-->
+		<li>2</li>
+		<li>3</li>
+		<ul>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<ul>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+		</ul>
+	</ul>
+
+	<ol> <!--Нумерованный список -->
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JS</li>
+	</ol>
+
+	<dl> <!--для списка терминов-->
+		<dt>Власник фейсбук:</dt> <!--термин\элемент-->
+			<dd>Марк Цукерберг</dd> <!--опис термина\элемента-->
+		<dt>Власник Амазон:</dt>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+	</dl>
+
+	<a href="mailto:example@.com">&#128386;example@.com</a>
+	<div>&#9749;</div>
+</div>
+
+ <header> <!--Заголовок страницы-->
+	<div>Logo</div>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main> <!--Основная часть страницы-->
+	<aside>Sidebar</aside>
+	<section> <!--Создание секции-->
+		<article>Article1</article> <!--Тег для статьи-->
+		<article>Article2</article>
+		<article>Article3</article>
+	</section>
+</main>
+
+<footer> <!--Низ страницы-->
+	footer
+</footer>
+<hr>
+
+<form action=""> <!--для создания форм на странице-->
+	<div><label>Your name: <input type="text" value="Nick"></label></div>  <!-- Label - Метка для елемента input--> <!--Форма для заполнения текста-->
+	<div><label>Telephone: <input type="tel"></label></div><!--Для ввода номера-->
+	<div><label>Email Address: <input type="email"></label></div> <!--Для ввода почты-->
+	<fieldset> <!--групирование элементов форм-->
+		<legend>Sushi Size</legend> <!--Заголовок для группы элементов форм-->
+		<div><label>Small set: <input required type="radio"></label></div> <!--Форма с выбором-->
+		<div><label>Medium set: <input required  type="radio"></label></div>
+		<div><label>Big set: <input required  type="radio"></label></div>
+		<div><label>Very Big set: <input required type="radio"></label></div>
+	</fieldset>
+	<fieldset>
+		<legend>Sushi Topping</legend>
+		<div><label>Small set: <input required type="checkbox"></label></div> <!--Форма с выбором галочкой-->
+		<div><label>Medium set: <input required  type="checkbox"></label></div>
+		<div><label>Big set: <input required  type="checkbox"></label></div>
+		<div><label>Very Big set: <input required type="checkbox"></label></div>
+	</fieldset>
+	<div><label>Delivery time: <input min="11:00" max="21:00" required type="time"></label></div> <!--Форма с выбором времени-->
+	<button>Send</button> <!--Кнопка отправки после заполнения формф-->
+</form>
+
+</body>
+</html>
